@@ -26,7 +26,9 @@ export const metadata: Metadata = {
     "پورتفولیوی SAMHDDEV. طراحی و توسعه وب‌اپلیکیشن با Next.js و React، همراه با معماری پایگاه داده.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="fa"
